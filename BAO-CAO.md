@@ -85,7 +85,7 @@ Công nợ chỉ giảm khi ngân hàng trả 201.
 
 ## 5. Nhận xét
 
-- Chưa kết nối được thì chắc chắn chưa trừ tiền → 503. Đã gửi mà mất phản hồi thì chưa biết → 504 PENDING. Bản cũ báo 500 FAILED trong khi tiền đã bị trừ.
+- Chưa kết nối được thì chắc chắn chưa trừ tiền → 503. Đã gửi mà mất phản hồi thì chưa biết → 504 PENDING.
 - Phải có timeout, nếu không thì người dùng phải chờ theo tốc độ của ngân hàng.
 - Keep-alive giảm số kết nối TCP từ 201 xuống 10.
 - Chỉ thử lại an toàn khi có Idempotency-Key; không thử lại lỗi 4xx.
